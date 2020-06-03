@@ -11,8 +11,11 @@ import { Router } from '@angular/router';
 export class NavComponent implements OnInit {
   model: any = {};  // object to store username and password
 
-  constructor(public authService: AuthService, private alertify: AlertifyService,
-   private router: Router) { }
+  constructor(
+    public authService: AuthService,
+    private alertify: AlertifyService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }

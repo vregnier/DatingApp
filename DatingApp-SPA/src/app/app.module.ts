@@ -29,13 +29,13 @@ import { appRoutes } from './routes';
       MessagesComponent
    ],
    imports: [
-	  BrowserModule,
-	  HttpClientModule,
-	  FormsModule,
-	  BrowserAnimationsModule,
-     BsDropdownModule.forRoot(),
-     RouterModule.forRoot(appRoutes)
-	],
+      BrowserModule,
+      HttpClientModule,
+      FormsModule,
+      BrowserAnimationsModule,
+      BsDropdownModule.forRoot(),
+      RouterModule.forRoot(appRoutes)
+   ],
    providers: [
       AuthService,
       ErrorInterceptorProvider
