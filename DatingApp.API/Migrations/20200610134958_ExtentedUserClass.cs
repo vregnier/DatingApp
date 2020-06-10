@@ -35,7 +35,7 @@ namespace DatingApp.API.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "Interest",
+                name: "Interests",
                 table: "Users",
                 nullable: true);
 
@@ -45,7 +45,7 @@ namespace DatingApp.API.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "KnowAs",
+                name: "KnownAs",
                 table: "Users",
                 nullable: true);
 
@@ -56,7 +56,7 @@ namespace DatingApp.API.Migrations
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
             migrationBuilder.AddColumn<string>(
-                name: "LookingFo",
+                name: "LookingFor",
                 table: "Users",
                 nullable: true);
 
@@ -115,7 +115,7 @@ namespace DatingApp.API.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "Interest",
+                name: "Interests",
                 table: "Users");
 
             migrationBuilder.DropColumn(
@@ -123,7 +123,7 @@ namespace DatingApp.API.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "KnowAs",
+                name: "KnownAs",
                 table: "Users");
 
             migrationBuilder.DropColumn(
@@ -131,7 +131,7 @@ namespace DatingApp.API.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "LookingFo",
+                name: "LookingFor",
                 table: "Users");
         }
     }

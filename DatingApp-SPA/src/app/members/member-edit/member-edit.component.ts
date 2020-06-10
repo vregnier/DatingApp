@@ -10,11 +10,11 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./member-edit.component.css']
 })
 export class MemberEditComponent implements OnInit {
-  @ViewChild('editForm',{static: true}) editForm: NgForm;
+  @ViewChild('editForm', {static: true}) editForm: NgForm;
   user: User;
   @HostListener('window:beforeunload', ['$envent'])
   unloadNotification($envent: any) {
-    if(this.editForm.dirty) {
+    if (this.editForm.dirty) {
       $envent.returnValue = true;
     }
   }
