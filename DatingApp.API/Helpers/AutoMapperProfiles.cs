@@ -23,6 +23,9 @@ namespace DatingApp.API.Helpers
 
             // for PUT operation
             CreateMap<UserForUpdateDto,User>();
+
+            CreateMap<Photo,PhotoForReturnDto>(); // use in GetPhoto
+            CreateMap<PhotoForCreationDto,Photo>();
         }
     }
 }
